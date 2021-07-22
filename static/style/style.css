@@ -3,23 +3,97 @@
   padding: 0px;
   box-sizing: border-box;
 }
+html {
+  font-family: "Montserrat", sans-serif;
+}
 header {
-  display: flex;
   background-color: rgb(32, 32, 32);
   height: 10vh;
+}
+.header {
+  width: 90%;
+  margin: auto;
+  display: flex;
 }
 .logo {
   font-family: "Festive", cursive;
   padding: 1rem;
-  flex: 1;
+  flex: 4;
+  min-width: 300px;
 }
 .logo h1 {
   color: aliceblue;
 }
-.nav {
-  flex: 5;
+nav {
+  flex: 1.5;
 }
+nav ul {
+  list-style: none;
+  display: flex;
+}
+.nav-btn {
+  padding: 2rem;
+  flex: 1;
+  height: 10vh;
+  align-items: center;
+}
+.nav-btn a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.action-list {
+  display: none;
+}
+.nav-btn a:hover {
+  background-color: antiquewhite;
+  color: green;
+  padding: 0.5rem;
+  border-radius: 100px;
+  font-weight: bolder;
+}
+
+/* .action-button:hover a {
+  padding: 0.5rem;
+  background-color: antiquewhite;
+  color: green;
+  border-radius: 100px;
+  font-weight: bolder;
+}
+.action-list {
+  display: none;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: antiquewhite;
+  border-radius: 15px;
+  color: green;
+  font-weight: bolder;
+} */
 .landing-page {
   height: 90vh;
-  background: linear-gradient();
+  background: linear-gradient(135deg, orange 60%, cyan);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+.bt-holder {
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.bt-holder button {
+  padding: 1rem;
+  border-radius: 100px;
+  border-style: none;
+  background-color: antiquewhite;
+  color: black;
+  transition: ease-in 5ms;
+}
+.bt-holder button:hover {
+  background-color: rgb(32, 32, 32);
+  color: antiquewhite;
+}
+.bt-holder h1 {
+  font-family: "Montserrat", sans-serif;
 }
