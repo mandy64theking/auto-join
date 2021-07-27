@@ -25,7 +25,7 @@ header {
   color: aliceblue;
 }
 nav {
-  flex: 1.5;
+  flex: 3;
 }
 nav ul {
   list-style: none;
@@ -93,7 +93,44 @@ nav ul {
 .bt-holder button:hover {
   background-color: rgb(32, 32, 32);
   color: antiquewhite;
+  cursor: pointer;
 }
 .bt-holder h1 {
   font-family: "Montserrat", sans-serif;
+}
+/* styling for login form */
+.login-form-box {
+  background-color: whitesmoke;
+  height: 40vh;
+  width: 30vw;
+  min-height: 100px;
+  min-width: 72px;
+  border-radius: 20px;
+  border-style: none;
+}
+#login-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#login-form input {
+  padding: 10px 20px;
+  flex: 1;
+  width: 20vw;
+}
+#login-form input:focus {
+  border-radius: 20px solid rgb(0, 119, 255);
+}
+.ip {
+  padding: 2rem;
+}
+.login-btn {
+  background-color: rgb(11, 192, 65);
+  color: white;
+  border-style: none;
+  cursor: pointer;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
 }
